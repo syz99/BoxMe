@@ -274,6 +274,96 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [-78.9524,
+          35.9812
+        ]
+      },
+      "properties": {
+        "phoneFormatted": "(919) 429-1381",
+        "phone": "9198384710",
+        "address": "Cafe Edens",
+        "city": "Durham",
+        "country": "United States",
+        "crossStreet": "at 15th St NW",
+        "postalCode": "27708",
+        "state": "NC"
+      }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.9424,
+          35.9972
+        ]
+      },
+      "properties": {
+        "phoneFormatted": "(919) 429-1381",
+        "phone": "9198384710",
+        "address": "Peaches Place",
+        "city": "Durham",
+        "country": "United States",
+        "crossStreet": "at 15th St NW",
+        "postalCode": "27708",
+        "state": "NC"
+      }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.9411,
+          36.0011
+        ]
+      },
+      "properties": {
+        "phoneFormatted": "(919) 834-2131",
+        "phone": "9198384710",
+        "address": "Best Storage in Town",
+        "city": "Durham",
+        "country": "United States",
+        "crossStreet": "at 15th St NW",
+        "postalCode": "27708",
+        "state": "NC"
+      }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.9435,
+          36.0028
+        ]
+      },
+      "properties": {
+        "phoneFormatted": "(919) 834-2131",
+        "phone": "9198384710",
+        "address": "Christine Yoon - CHEAP storage",
+        "city": "Durham",
+        "country": "United States",
+        "crossStreet": "at 15th St NW",
+        "postalCode": "27708",
+        "state": "NC"
+      }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.9371,
+         36.0071
+        ]
+      },
+      "properties": {
+        "phoneFormatted": "(919) 182-9231",
+        "phone": "9198384710",
+        "address": "Yuki's Dad",
+        "city": "Durham",
+        "country": "United States",
+        "crossStreet": "at 15th St NW",
+        "postalCode": "27708",
+        "state": "NC"
+      }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [-78.9464,
           36.0030
         ]
@@ -383,6 +473,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [-78.9203,
+          36.0098
+        ]
+      },
+      "properties": {
+        "phoneFormatted": "(919) 381-9378",
+        "phone": "91963329",
+        "address": "Rachel's House",
+        "city": "Durham",
+        "country": "United States",
+        "crossStreet": "at 15th St NW",
+        "postalCode": "27708",
+        "state": "NC"
+      }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.6821,
+          35.7847
+        ]
+      },
+      "properties": {
+        "phoneFormatted": "(919) 918-9381",
+        "phone": "91963329",
+        "address": "Wolfpack Storage",
+        "city": "Durham",
+        "country": "United States",
+        "crossStreet": "at 15th St NW",
+        "postalCode": "27708",
+        "state": "NC"
+      }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.8203,
           36.0098
         ]
       },
@@ -713,7 +839,9 @@
     var popup = new mapboxgl.Popup({closeOnClick: false})
       .setLngLat(currentFeature.geometry.coordinates)
       .setHTML('<h3>Available Storage</h3>' +
-        '<h4>' + currentFeature.properties.address + '</h4>' + '<form action="https://rachelhua.typeform.com/to/QypJc2" target="_blank"><input type="submit" value="BOOK"/></form>')
+        '<h4>' + currentFeature.properties.address + '</h4>' 
+      + '<h4>' + currentFeature.properties.phoneFormatted + '</h4>' 
+      + '<form action="https://rachelhua.typeform.com/to/QypJc2" target="_blank"><input type="submit" value="BOOK"/></form>')
       .addTo(map);
   }
 
