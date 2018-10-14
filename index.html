@@ -200,6 +200,8 @@
   }
 
   </style>
+
+  <link rel="shortcut icon" type="image/png" href="/logo.png"/>
 </head>
 
 <body>
@@ -234,6 +236,14 @@
     center: [-77.034084142948, 38.909671288923],
     zoom: 13
   });
+
+  // Add geolocate control to the map.
+  map.addControl(new mapboxgl.GeolocateControl({
+      positionOptions: {
+          enableHighAccuracy: true
+      },
+      trackUserLocation: true
+  }));
 
   var stores = {
     "type": "FeatureCollection",
